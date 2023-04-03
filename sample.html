@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Bar Example</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CSS CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #f1f1f1;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: row;
+			height: 100vh;
+		}
+
+		#leftContainer {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 300px;
+			background-color: #f1f1f1;
+			padding: 20px;
+			box-sizing: border-box;
+			margin-right: 20px;
+			height: 100%;
+			overflow-y: scroll;
+		}
+
+		#searchInput {
+			padding: 8px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			font-size: 16px;
+			width: 100%;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+		}
+
+		#searchResults {
+			background-color: #fff;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			font-size: 14px;
+		}
+
+		#searchResults span {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		#rightContainer {
+			flex-grow: 1;
+			background-color: #ccc;
+			padding: 20px;
+			box-sizing: border-box;
+			height: calc(100vh - 40px);
+			margin-left: 320px;
+		}
+
+		@media (max-width: 768px) {
+			.container {
+				flex-direction: column;
+				height: auto;
+			}
+
+			#leftContainer {
+				position: static;
+				width: 100%;
+				margin-right: 0;
+				height: auto;
+				margin-bottom: 20px;
+			}
+
+			#rightContainer {
+				margin-left: 0;
+				height: auto;
+				width: 100%;
+			}
+      #buttonContainer {
+				margin-left: 0;
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="leftContainer">
+			<input type="text" id="searchInput" placeholder="Search...">
+			<div id="searchResults">
+				<span>apple</span>
+				<span>banana</span>
+				<span>orange</span>
+				<span>pear</span>
+			</div>
+		</div>
+		<div id="rightContainer">
+			
+        <h2>Fill-Up Form</h2>
+        <form class="text-center">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="edit" class="btn btn-primary">Edit</button>
+          <button type="print" class="btn btn-primary">Print</button>
+        </form>
+        <div class="mt-5">
+          <button type="button" class="btn btn-secondary mr-2">Button 1</button>
+          <button type="button" class="btn btn-secondary mr-2">Button 2</button>
+          <button type="button" class="btn btn-secondary mr-2">Button 3</button>
+          <button type="button" class="btn btn-secondary mr-2">Button 4</button>
+          <button type="button" class="btn btn-secondary">Button 5</button>
+        </div>
+      
+		</div>
+	</div>
+ 
+
+	<!-- jQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" crossorigin="anonymous"></script>
+	<!-- Bootstrap JS CDN -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.
+
+</body>
+</html>
